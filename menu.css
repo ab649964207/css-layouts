@@ -1,0 +1,143 @@
+ul {
+    list-style: none;
+}
+
+a {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 这里是菜单导航栏的样式 */
+
+
+
+.menuButton {
+    position: absolute;
+    left: 2vh;
+    top: 3ch;
+    display: block;
+}
+
+.menuButton .icon {
+    display: none;
+}
+
+.menuButton .icon.active {
+    display: block;
+    animation: rotate 1s ease ;
+}
+
+.menuButton .icon {
+    color: white;
+    font-size: 2em;
+}
+
+.menu {
+    display: none;
+    /* background-color: rgba(192, 103, 103, 0.747); */
+    position: absolute;
+    width: 25vh;
+    height: 90vh;
+    top: 10vh;
+}
+
+.menu.active {
+    display: block;
+    animation: FlyIntoreverse 600ms
+}
+
+.menu-bar {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.menuitem {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    padding: 15px 20px;
+    color: #777777;
+    border-bottom: 1px solid #777777;
+    position: relative;
+}
+
+.menuitem strong {
+    display: block;
+    font-weight: bold;
+    position: relative;
+}
+
+.menuitem small {
+    display: block;
+}
+
+.menuitem.active {
+    /* border-left: 4px solid #e67e22; */
+    /* border-right: 4px solid #e67e22; */
+    color: orange;
+    box-shadow: 0 0 5px #DDD;
+    -webkit-box-shadow: 0 0 5px #DDD;
+}
+
+.menuitem.active a::before {
+    content: "";
+    position: absolute;
+    top: 42%;
+    left: 0;
+    border-left: 5px solid orange;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.menuitem.active a::after {
+    content: "";
+    position: absolute;
+    top: 42%;
+    right: 0;
+    border-right: 5px solid orange;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.menuitem:hover strong {
+    animation: FlyInto 300ms linear;
+    color: orange;
+    font-size: 0.8em;
+    
+}
+
+.menuitem:hover small {
+    color: orange;
+    animation: FlyIntoreverse 300ms linear;
+    font-size: 1.2em;
+}
+
+@keyframes FlyInto {
+    0% {
+        transform: translateX(15vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes FlyIntoreverse {
+    0% {
+        transform: translateX(-15vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(360deg)
+    }
+    100% {
+        transform: rotateX(0)
+    }
+}

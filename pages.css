@@ -1,0 +1,185 @@
+/* 这里是每一页展示的布局样式 */
+
+
+#page1 .container {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 .left {
+    float: left;
+    height: 100%;
+    width: 100px;
+    background: #ff69b4;
+}
+
+/*中间栏自适应*/
+
+#page1 #header {
+    background-color: #666;
+    height: 10%;
+}
+
+#page1 .main {
+    width: 100%;
+    height: 100%;
+    margin: 0 200px 0 100px;
+    background: #659;
+}
+
+/*右边栏右浮动*/
+
+#page1 #container {
+    padding-left: 200px;
+    padding-right: 150px;
+    width: 100%;
+    height: 80%;
+}
+
+#page1 #container .column {
+    float: left;
+    height: 100%;
+}
+
+#page1 #center {
+    width: 100%;
+    background-color: wheat;
+}
+
+#page1 #left {
+    width: 200px;
+    margin-left: -100%;
+    position: relative;
+    right: 200px;
+    background-color: #7abbde;
+}
+
+#page1 #right {
+    width: 150px;
+    margin-right: -150px;
+    background-color: #ff6633;
+}
+
+#page1 #footer {
+    clear: both;
+    background-color: #666;
+    height: 10%;
+}
+
+/* page2 */
+
+#page2 .container {
+    display: flex;
+}
+
+#page2 .left {
+    width: 200px;
+    background: rgb(255, 208, 208);
+}
+
+#page2 .main {
+    flex: 1;
+    background: rgb(212, 212, 255);
+}
+
+#page2 .right {
+    width: 200px;
+    background: rgb(255, 200, 200);
+}
+
+#page3 .container {
+    width: 100%;
+    height: 100%;
+}
+
+#page3 .column {
+    text-align: center;
+    font-size: 3em;
+    height: 100%;
+    float: left;
+    width: 25%;
+}
+
+#page3 .column:nth-child(1) {
+    background-color: tomato;
+}
+
+#page3 .column:nth-child(2) {
+    background-color: gray;
+}
+
+#page3 .column:nth-child(3) {
+    background-color: antiquewhite;
+}
+
+#page3 .column:nth-child(4) {
+    background-color: aqua;
+}
+
+/* page4 */
+
+#page4 #container {
+    width: 100%;
+    height: 80%;
+}
+
+#page4 .column {
+    float: left;
+}
+
+#page4 #header {
+    background-color: #666;
+    height: 10%;
+}
+
+#page4 #center {
+    margin-left: 200px;
+    margin-right: 150px;
+    background-color: aqua;
+    height: 100%;
+}
+
+#page4 #left {
+    width: 200px;
+    margin-left: -100%;
+    background-color: orangered;
+    height: 80%;
+}
+
+#page4 #right {
+    width: 150px;
+    margin-left: -150px;
+    background-color: tomato;
+    height: 80%;
+}
+
+#page4 #footer {
+    clear: both;
+    background-color: #666;
+    height: 10%;
+}
+
+#page5 .header {
+    background-color: #777;
+    height: 10%;
+}
+
+#page5 .footer {
+    background-color: #777;
+    height: 10%;
+}
+
+#page5 .left {
+    width: 200px;
+    height: 80%;
+    background: rgb(255, 95, 95);
+    float: left;
+    color: #fff;
+}
+
+#page5 .right {
+    margin-left: 210px;
+    height: 80%;
+    background: rgb(255, 115, 34);
+    text-align: center;
+}

@@ -5,34 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="page.css">
+    <title>CSS-LAYOUT</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="vendor/prism.css">
     <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
-    
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="//at.alicdn.com/t/font_1380664_5ei753kqxpi.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="wrap" class="wrap">
         <div class="main" id="main">
-                <div id="page1" class="page"></div>
-                <div id="page2" class="page"></div>
-                <div id="page3" class="page"></div>
-                <div id="page4" class="page"></div>
+            <div id="page1" class="page">
+                <div class="introduce">
+                    <h1>三栏式布局</h1>
+                    <h2>圣杯布局</h2>
+                    <h3>float + 负margin + position实现</h3>
+                    <p></p>
+                </div>
+                <div class="layout-area">
+                    <div id="header">#header</div>
+                    <div id="container">
+                        <div id="center" class="column">#center</div>
+                        <div id="left" class="column">#left</div>
+                        <div id="right" class="column">#right</div>
+                    </div>
+                    <div id="footer">#footer</div>
+                </div>
+                <div class="css-area">
+                    <pre class="html"></pre>
+                    <pre class="css"></pre>
+                </div>
             </div>
-          
+            <div id="page2" class="page">
+                <div class="introduce">
+                    <h1>三栏式布局</h1>
+                    <h2>左右栏定宽，中间栏自适应</h2>
+                    <h3>flex布局实现,高度由文档内容撑开</h3>
+                    <p></p>
+                </div>
+                <div class="layout-area">
+                    <div class="container">
+                        <div class="left">left 高度由文档内容撑开高度由文档内容撑开高度由文档内容撑开高度由文档内容撑开高度由文档内容撑开</div>
+                        <div class="main">center O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O</div>
+                        <div class="right">right</div>
+                    </div>
+
+                </div>
+                <div class="css-area">
+                    <pre class="html"></pre>
+                    <pre class="css"></pre>
+                </div>
+            </div>
+            <div id="page3" class="page">
+                <div class="introduce">
+                    <h1>多列等分布局</h1>
+                    <h2>多列等分分布</h2>
+                    <h3>使用float实现</h3>
+                    <p></p>
+                </div>
+                <div class="layout-area">
+                    <div class="container">
+                        <div class="column">1</div>
+                        <div class="column">2</div>
+                        <div class="column">3</div>
+                        <div class="column">4</div>
+                    </div>
+                </div>
+                <div class="css-area">
+                    <pre class="html"></pre>
+                    <pre class="css"></pre>
+                </div>
+            </div>
+            <div id="page4" class="page">
+                <div class="introduce">
+                    <h1>三栏式布局</h1>
+                    <h2>双飞翼布局</h2>
+                    <h3>绝对定位布局：position + margin</h3>
+                    <p></p>
+                </div>
+                <div class="layout-area">
+                    <div id="header">#header</div>
+                    <div id="container" class="column">
+                        <div id="center">#center</div>
+                    </div>
+                    <div id="left" class="column">#left</div>
+                    <div id="right" class="column">#right</div>
+                    <div id="footer">#footer</div>
+                </div>
+                <div class="css-area">
+                    <pre class="html"></pre>
+                    <pre class="css"></pre>
+                </div>
+            </div>
+            <div id="page5" class="page">
+                <div class="introduce">
+                    <h1>两栏布局</h1>
+                    <h2>一栏定宽，一栏自适应</h2>
+                    <h3>float + margin</h3>
+                </div>
+                <div class="layout-area">
+                    <div class="header">#header</div>
+                        <div class="left">定宽</div>
+                        <div class="right">自适应</div>
+                    <div class="footer">#footer</div>
+                </div>
+                <div class="css-area">
+                    <pre class="html"></pre>
+                    <pre class="css"></pre>
+                </div>
+            </div>
+        </div>
+        <a class="menuButton" id="menuButton">
+            <svg class="icon active" id="menuIcon" aria-hidden="true">
+                <use xlink:href="#icon-liebiao"></use>
+            </svg>
+            <svg class="icon" id="closeIcon" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </a>
+        <div class="menu" id="menu">
+            <ul class="menu-bar">
+                <li targetPage="1" class="menuitem "><a href=""><strong>三栏式布局</strong><small>圣杯布局</small></a></li>
+                <li targetPage='2' class="menuitem "><a href=""><strong>三栏式布局</strong><small>flex布局实现</small></a></li>
+                <li targetPage='3' class="menuitem "><a href=""><strong>多列等分布局</strong><small>多列等分布局</small></a></li>
+                <li targetPage='4' class="menuitem "><a href=""><strong>三栏式布局</strong><small>双飞翼布局</small></a></li>
+                <li targetPage='5' class="menuitem "><a href=""><strong>两栏布局</strong><small>定宽+自适应</small></a></li>
+
+            </ul>
         </div>
     </div>
-    <div class="turnToPage" >
-        <button>
-            1
-        </button>
-        <button >
-            2
-        </button>
-    </div>
-   
+
+    <script src="vendor/prism.js"></script>
     <script src="main.js"></script>
+    <script src="css-introduce.js"></script>
+    <script src="Turntopage.js"></script>
 </body>
 
 </html>
